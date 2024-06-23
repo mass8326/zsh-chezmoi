@@ -27,15 +27,31 @@ Then add `chezmoi` after `git` to your `plugins` array:
 
 `zsh-chezmoi` adds several aliases to make managing your dotfiles quick and easy.
 
-| Alias  | Command                | Desc                                         |
-| ------ | ---------------------- | -------------------------------------------- |
-| `ch`   | `chezmoi`              | Run chezmoi                                  |
-| `chd`  | `chezmoi diff`         | Print diff between your source and target    |
-| `cha`  | `chezmoi apply`        | Apply source changes to your target          |
-| `che`  | `chezmoi edit`         | Edit chezmoi source using your `$EDITOR`     |
-| `chea` | `chezmoi edit --apply` | Edit chezmoi source then apply to target     |
-| `chcd` | `chezmoi cd`           | Spawn shell in chezmoi source directory      |
-| `chud` | `chezmoi update`       | Pull from remote and apply changes to target |
+### Utilities
+
+| Alias  | Command        | Desc                                      |
+| ------ | -------------- | ----------------------------------------- |
+| `ch`   | `chezmoi`      | Run chezmoi                               |
+| `chd`  | `chezmoi diff` | Print diff between your source and target |
+| `chcd` | `chezmoi cd`   | Spawn shell in chezmoi source directory   |
+
+### Editing Source
+
+| Alias  | Command                | Desc                                     |
+| ------ | ---------------------- | ---------------------------------------- |
+| `cha`  | `chezmoi add`          | Add file from target to source           |
+| `chr`  | `chezmoi re-add`       | Import changes from target to source     |
+| `che`  | `chezmoi edit`         | Edit chezmoi source using your `$EDITOR` |
+| `chea` | `chezmoi edit --apply` | Edit chezmoi source then apply to target |
+
+### Updating Target
+
+| Alias  | Command          | Desc                                         |
+| ------ | ---------------- | -------------------------------------------- |
+| `chap` | `chezmoi apply`  | Apply source changes to your target          |
+| `chud` | `chezmoi update` | Pull from remote and apply changes to target |
+
+### Git
 
 `zsh-chezmoi` also detects any `git` aliases that start with `g` and adds the corresponding alias for `chezmoi git`. For this to happen, the alias must exist before `zsh-chezmoi` is instantiated.
 
