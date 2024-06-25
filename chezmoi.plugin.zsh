@@ -8,6 +8,7 @@ source <(chezmoi completion zsh)
 alias ch="chezmoi"
 alias chd="chezmoi diff"
 alias chcd="chezmoi cd"
+alias chst="chezmoi status"
 
 # Editing source
 alias cha="chezmoi add"

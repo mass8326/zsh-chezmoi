@@ -29,11 +29,12 @@ Then add `chezmoi` after `git` to your `plugins` array:
 
 ### Utilities
 
-| Alias  | Command        | Desc                                      |
-| ------ | -------------- | ----------------------------------------- |
-| `ch`   | `chezmoi`      | Run chezmoi                               |
-| `chd`  | `chezmoi diff` | Print diff between your source and target |
-| `chcd` | `chezmoi cd`   | Spawn shell in chezmoi source directory   |
+| Alias  | Command          | Desc                                         |
+| ------ | ---------------- | -------------------------------------------- |
+| `ch`   | `chezmoi`        | Run chezmoi                                  |
+| `chd`  | `chezmoi diff`   | Print diff between your source and target    |
+| `chcd` | `chezmoi cd`     | Spawn shell in chezmoi source directory      |
+| `chst` | `chezmoi status` | Show changed files between source and target |
 
 ### Editing Source
 
