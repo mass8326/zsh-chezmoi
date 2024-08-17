@@ -20,6 +20,10 @@ alias chea="chezmoi edit --apply"
 alias chap="chezmoi apply"
 alias chud="chezmoi update"
 
+# Standardized $0 handling
+0="${ZERO:-${${0:#$ZSH_ARGZERO}:-${(%):-%N}}}"
+0="${${(M)0:#/*}:-$PWD/$0}"
+
 # Git
 [[ $+commands[git] ]] || return 0
 source <(alias | awk -F "='" -f "${0:h}/alias.awk")
