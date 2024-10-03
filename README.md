@@ -27,14 +27,14 @@ Then add `chezmoi` after `git` to your `plugins` array:
 
 `zsh-chezmoi` adds several aliases to make managing your dotfiles quick and easy.
 
-### Utilities
+### Status
 
-| Alias  | Command          | Desc                                         |
-| ------ | ---------------- | -------------------------------------------- |
-| `ch`   | `chezmoi`        | Run chezmoi                                  |
-| `chd`  | `chezmoi diff`   | Print diff between your source and target    |
-| `chcd` | `chezmoi cd`     | Spawn shell in chezmoi source directory      |
-| `chst` | `chezmoi status` | Show changed files between source and target |
+| Alias   | Command          | Desc                                         |
+| ------- | ---------------- | -------------------------------------------- |
+| `ch`    | `chezmoi`        | Simple alias for `chezmoi`                   |
+| `chd`   | `chezmoi diff`   | Print diff between your source and target    |
+| `chst`  | `chezmoi status` | Show changed files between source and target |
+| `chdoc` | `chezmoi doctor` | Checks for common problems                   |
 
 ### Editing Source
 
@@ -44,13 +44,15 @@ Then add `chezmoi` after `git` to your `plugins` array:
 | `chr`  | `chezmoi re-add`       | Import changes from target to source     |
 | `che`  | `chezmoi edit`         | Edit chezmoi source using your `$EDITOR` |
 | `chea` | `chezmoi edit --apply` | Edit chezmoi source then apply to target |
+| `chcd` | `chezmoi cd`           | Spawn shell in chezmoi source directory  |
 
 ### Updating Target
 
-| Alias  | Command          | Desc                                         |
-| ------ | ---------------- | -------------------------------------------- |
-| `chap` | `chezmoi apply`  | Apply source changes to your target          |
-| `chud` | `chezmoi update` | Pull from remote and apply changes to target |
+| Alias  | Command           | Desc                                         |
+| ------ | ----------------- | -------------------------------------------- |
+| `chap` | `chezmoi apply`   | Apply source changes to your target          |
+| `chup` | `chezmoi update`  | Pull from remote and apply changes to target |
+| `chug` | `chezmoi upgrade` | Upgrade chezmoi to the latest version        |
 
 ### Git
 

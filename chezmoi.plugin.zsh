@@ -4,21 +4,23 @@
 # Completion
 source <(chezmoi completion zsh)
 
-# Utilities
+# Status
 alias ch="chezmoi"
 alias chd="chezmoi diff"
-alias chcd="chezmoi cd"
 alias chst="chezmoi status"
+alias chdoc="chezmoi doctor"
 
 # Editing source
 alias cha="chezmoi add"
 alias chr="chezmoi re-add"
 alias che="chezmoi edit"
 alias chea="chezmoi edit --apply"
+alias chcd="chezmoi cd"
 
 # Updating target
 alias chap="chezmoi apply"
-alias chud="chezmoi update"
+alias chup="chezmoi update"
+alias chug="chezmoi upgrade"
 
 # Standardized $0 handling
 0="${ZERO:-${${0:#$ZSH_ARGZERO}:-${(%):-%N}}}"
